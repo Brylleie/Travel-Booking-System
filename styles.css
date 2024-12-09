@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Updated font for a modern look */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    text-align: center; /* Center text */
+    background: radial-gradient(circle, #107586, #16213e);
+    color: #eaeaea; /* Light text color for contrast */
+    line-height: 2;
+
+}
+
+/* Container Styles */
+
+/* General Container */
+.container {
+    background: rgba(1, 1, 24, 0.9); /* Dark background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 20px rgba(30, 4, 48, 0.925); /* Deeper shadow for more depth */
+    width: calc(70% - 30px); /* Full width with some padding from sides */
+    max-width: 500px; /* Max width to prevent stretching on large screens */
+    margin-top: 50px; /* Space from the top of the page */
+    margin-bottom: auto;
+    line-height: 2;
+}
+.button-container {
+    margin-top: 50px; /* Space around the button container */
+    align-items: center; /* Center items horizontally */
+}
+.button {
+    margin-top: 20px;
+    display: inline-block; /* Make buttons inline */
+    padding: 7px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+    margin-bottom: 10px; /* Space below each button */
+    font-weight: bold; /* Bold text for emphasis */
+}
+.book-now {
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient for Book Now */
+}
+
+.book-now:hover {
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.logout {
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient for Book Now */
+}
+
+.logout:hover {
+    background: #ff1a1a; /* Darker red on hover */
+}
+.login {
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient for Book Now */
+}
+.login:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Register Button */
+.register {
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient for Book Now */
+}
+
+.register:hover {
+    background: #045214; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Specific Container Styles */
+
+/* Booking Page Container */
+.booking-container {
+    background-color: rgba(1, 1, 24, 0.8); /* Slightly different shade for booking page */
+    margin-bottom: 50px;
+    background: rgba(1, 1, 24, 0.9); /* Dark background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 20px rgba(30, 4, 48, 0.925); /* Deeper shadow for more depth */
+    width: calc(100% - 40px); /* Full width with some padding from sides */
+    max-width: 800px; /* Max width to prevent stretching on large screens */
+    margin-top: 20px; /* Space from the top of the page */
+}
+.booking-container .book-btn{
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.booking-container .book-btn:hover{
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+}
+
+/* Registration Page Container */
+.registration-container {
+    background-color: rgba(1, 1, 24, 0.8); /* Slightly different shade for booking page */
+    margin-bottom: 50px;
+    background: rgba(1, 1, 24, 0.9); /* Dark background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 20px rgba(30, 4, 48, 0.925); /* Deeper shadow for more depth */
+    width: calc(100% - 40px); /* Full width with some padding from sides */
+    max-width: 800px; /* Max width to prevent stretching on large screens */
+    margin-top: 50px; /* Space from the top of the page */
+    margin-bottom: auto;
+    line-height: 2;  
+    
+}
+.registration-container .register-btn{
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.registration-container .register-btn:hover{
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+}
+
+.login-container{
+    background-color: rgba(1, 1, 24, 0.8); /* Slightly different shade for booking page */
+    margin-bottom: 50px;
+    background: rgba(1, 1, 24, 0.9); /* Dark background with slight transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 20px rgba(30, 4, 48, 0.925); /* Deeper shadow for more depth */
+    width: calc(80% - 40px); /* Full width with some padding from sides */
+    max-width: 700px; /* Max width to prevent stretching on large screens */
+    margin-top: 100px; /* Space from the top of the page */
+    margin-bottom: auto;
+    line-height: 1.5;  
+}
+.login-container .login-btn{
+    background-color:#4367a0;
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.login-container .login-btn:hover{
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+}
+
+/* Confirmation Page Container */
+.confirmation-container {
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(30, 4, 48, 0.925); /* Deeper shadow for more depth */
+    padding: 40px; /* Increased padding for better spacing */
+    max-width: 800px; /* Max width to prevent stretching on large screens */
+    width: calc(100% - 40px); /* Full width with some padding from sides */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 50px; /* Space from the top of the page */
+    margin-bottom: auto;
+    background-color: rgba(5, 5, 20, 0.9); /* Different shade for confirmation page */
+    line-height: 1.5;
+}
+
+.confirmation-container ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.confirmation-container ul li {
+    margin: 10px 0;
+}
+
+/* Differentiating Text Colors in Confirmation Section */
+.confirmation-container ul li strong {
+    color: #fdc747; /* Gold color for labels (Name, Email, etc.) */
+}
+
+.confirmation-container ul li span {
+    color: #eaeaea; /* Light color for user input values */
+}
+
+/* Button Styles in Confirmation Page */
+.confirmation-container .back-btn {
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    flex-direction: column; /* Align items vertically */
+    
+}
+
+.confirmation-container .back-btn:hover {
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+}
+.confirmation-container .index-btn{
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.confirmation-container .index-btn:hover{
+    background: linear-gradient(to right, #4367a0, #7d9bdb); /* Change gradient on hover */
+}
+
+/* Header Styles */
+header {
+    margin: 20px 0; /* Space around header */
+}
+
+h1 {
+    color: #00adb5; /* Teal color for the main heading */
+    font-weight: 600; /* Bold weight for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form Elements Styles (Common) */
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    text-align: left; /* Align text to the left */
+    color: #ffd369; /* Gold color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #00adb5; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Light background for inputs */
+    color: #eaeaea; /* Text color in inputs */
+}
+
+/* Button Styles (Common) */
+
+button {
+    margin-bottom: 10px; /* Space below each button */
+    background: linear-gradient(to right, #0d5b8f, #213453); /* Button gradient */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border on button */
+    border-radius: 5px; /* Rounded corners on button */
+}
+
+button:hover {
+   background-color:#4367a0;
+   transition-duration:.3s;
+}
+
+/* Links (Common) */
+
+a {
+   color:#00adb5;
+   text-decoration:none;
+}
+
+a:hover {
+   text-decoration:none;
+}
+
+/* Footer Styles (Common) */
+
+footer {
+   width:auto;
+   text-align:center;
+}
